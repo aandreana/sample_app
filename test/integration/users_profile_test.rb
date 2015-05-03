@@ -4,9 +4,9 @@ class UsersProfileTest < ActionDispatch::IntegrationTest
   include ApplicationHelper
 
   def setup
-    @user = users(:tony)
+    @user = users(:michael)
   end
-
+  
   test "profile display" do
     get user_path(@user)
     assert_template 'users/show'
